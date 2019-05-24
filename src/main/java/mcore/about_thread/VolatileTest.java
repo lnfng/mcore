@@ -1,4 +1,4 @@
-package mcore.thread;
+package mcore.about_thread;
 
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;

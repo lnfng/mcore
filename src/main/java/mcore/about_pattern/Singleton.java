@@ -1,4 +1,4 @@
-package mcore.pattern;
+package mcore.about_pattern;
 
 /**
  * 单例模式（Singleton）
