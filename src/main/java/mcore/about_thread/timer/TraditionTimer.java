@@ -1,5 +1,6 @@
 package mcore.about_thread.timer;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -27,7 +28,7 @@ public class TraditionTimer {
 		new Timer().schedule(task,2000);
 		while (true) {
 			// 仅用于输出秒数
-			System.out.println(new Date().getSeconds());
+			System.out.println(Calendar.getInstance().get(Calendar.SECOND));
 			Thread.sleep(1000);
 		}
 		

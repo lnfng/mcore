@@ -1,9 +1,10 @@
 package mcore.about_annotation.advance;
 
-import java.lang.annotation.*;  
+import mcore.about_annotation.MetaAnnotation;
 
-import about_annotation.MetaAnnotation;
-/** 
+import java.lang.annotation.*;
+
+/**
  * 自定义注解 
  */ 
 
