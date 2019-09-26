@@ -36,6 +36,21 @@
 			<version>4.5</version>
 		</dependency>
 
+		<dependency>
+			<!-- 推荐 -->
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.8</version>
+		</dependency>
+
+
+		<dependency>
+			<!-- 较老 -->
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
+		</dependency>
+
 
 	</dependencies>
 	
