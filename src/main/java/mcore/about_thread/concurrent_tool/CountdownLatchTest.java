@@ -54,16 +54,13 @@ public class CountdownLatchTest {
 			Thread.sleep((long)(Math.random()*10000));
 		
 			/*在这里进行代码处理*/
-			System.out.println("线程" + Thread.currentThread().getName() + 
-					"即将发布命令");						
+			System.out.println("线程" + Thread.currentThread().getName() + "即将发布命令");
 			cdOrder.countDown();
 			
-			System.out.println("线程" + Thread.currentThread().getName() + 
-			"已发送命令，正在等待结果");	
+			System.out.println("线程" + Thread.currentThread().getName() + "已发送命令，正在等待结果");
 			
 			cdAnswer.await();
-			System.out.println("线程" + Thread.currentThread().getName() + 
-			"已收到所有响应结果");	
+			System.out.println("线程" + Thread.currentThread().getName() + "已收到所有响应结果");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}				

@@ -22,12 +22,9 @@ public class CallableAndFuture {
 		
 		Future<String> future=executor.submit(
 				/**该泛型就是返回结果的类型*/
-				new Callable<String>() {
-
-					public String call() throws Exception {
-						Thread.sleep(3000);
-						return "hello world";
-					}
+				() -> {
+					Thread.sleep(3000);
+					return "hello world";
 				});
 		
 		System.out.println("等待结果...");
